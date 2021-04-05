@@ -1,0 +1,36 @@
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+
+  & > li:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-list__link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color-primary);
+  }
+}
+
+.contacts-list__icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+
+  .contacts-list__link:hover &,
+  .contacts-list__link:focus & {
+    fill: var(--accent-color-primary);
+  }
+}
