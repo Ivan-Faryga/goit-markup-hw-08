@@ -1,5 +1,4 @@
-.hero__btn,
-.modal-form-btn {
+.hero__btn, .modal-form-btn {
   display: flex;
   align-items: center;
   text-align: center;
@@ -78,10 +77,9 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
-  text-align: center;
 }
 
 .active,
@@ -162,8 +160,7 @@ menu__link:hover {
   transition: color 250ms var(--timing-function);
 }
 
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color-primary);
 }
 
@@ -198,8 +195,7 @@ menu__link:hover {
   transition: color 250ms var(--timing-function);
 }
 
-.contacts-list__link:hover,
-.contacts-list__link:focus {
+.contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-color-primary);
 }
 
@@ -216,18 +212,12 @@ menu__link:hover {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bg-hero/hero-bg-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero/hero-bg-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -242,8 +232,15 @@ menu__link:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 696px;
   margin: 0 auto 30px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+  }
 }
 
 .hero__btn {
@@ -385,8 +382,7 @@ menu__link:hover {
 
 .teammate {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -449,8 +445,7 @@ menu__link:hover {
   transition: background-color 250ms var(--timing-function);
 }
 
-.team-social-list__link:hover,
-.team-social-list__link:focus {
+.team-social-list__link:hover, .team-social-list__link:focus {
   background-color: var(--accent-color-primary);
 }
 
@@ -483,8 +478,7 @@ menu__link:hover {
   transition: border-color 250ms var(--timing-function);
 }
 
-.clients-list__link:hover,
-.clients-list__link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color-primary);
 }
 
@@ -559,8 +553,7 @@ menu__link:hover {
   transition: color 250ms var(--timing-function);
 }
 
-.adress__location:focus,
-.adress__location:hover {
+.adress__location:focus, .adress__location:hover {
   color: var(--accent-color-primary);
 }
 
@@ -574,8 +567,7 @@ menu__link:hover {
   transition: color 250ms var(--timing-function);
 }
 
-.adress__link:hover,
-.adress__link:focus {
+.adress__link:hover, .adress__link:focus {
   color: #2196f3;
 }
 
@@ -606,8 +598,7 @@ menu__link:hover {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: var(--accent-color-primary);
 }
 
@@ -669,8 +660,7 @@ menu__link:hover {
   transition: background-color 250ms var(--timing-function);
 }
 
-.sign-up-form__btn:hover,
-.sign-up-form__btn:focus {
+.sign-up-form__btn:hover, .sign-up-form__btn:focus {
   background-color: #188ce8;
 }
 
@@ -719,8 +709,7 @@ menu__link:hover {
   transition: fill 250ms var(--timing-function);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--accent-color-primary);
 }
 
