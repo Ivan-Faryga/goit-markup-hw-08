@@ -36,5 +36,9 @@ img {
 }
 
 .padding-section {
-  padding: var(--section-padding);
+  padding: var(--section-padding-mob-tab);
+
+  @media screen and(min-width: 1200px) {
+    padding: var(--section-padding-desktop);
+  }
 }
