@@ -123,19 +123,39 @@
                 <h2 class="section-header">Чем мы занимаемся</h2>
                 <ul class="services__list list">
                     <li class="services__item">
-                        <img src="./images/services/box-1.jpg" alt="Верстка страниц">
+                        <picture>
+                            <source srcset="./images/desktop/services/desktopwp.webp 1x, ./images/desktop/services/desktop@2xwp.webp 2x"
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/services/desktop.jpg 1x, ./images/desktop/services/desktop@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                            <img src="./images/desktop/services/desktop.jpg" alt="Верстка страниц">
+                        </picture>
                         <div class="services__overlay">
                             <p class="services__text">десктопные приложения</p>
                         </div>
                     </li>
                     <li class="services__item">
-                        <img src="./images/services/box-2.jpg" alt="Адаптация страниц под разные устройства" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/desktop/services/mobilewp.webp 1x, ./images/desktop/services/mobile@2xwp.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/services/mobile.jpg 1x, ./images/desktop/services/mobile@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./images/desktop/services/mobile.jpg" alt="Адаптация страниц под разные устройства">
+                        </picture>
+                        
                         <div class="services__overlay">
                             <p class="services__text">мобильные приложения</p>
                         </div>
                     </li>
                     <li class="services__item">
-                        <img src="./images/services/box-3.jpg" alt="Улучшение опыта использования сайта при помощи стилей" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/desktop/services/designwp.webp 1x, ./images/desktop/services/design@2xwp.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/services/design.jpg 1x, ./images/desktop/services/design@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <img src="./images/desktop/services/design.jpg" alt="Улучшение опыта использования сайта при помощи стилей">
+                        </picture>
+                        
                         <div class="services__overlay">
                             <p class="services__text">дизайнерские решения</p>
                         </div>
