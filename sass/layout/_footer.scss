@@ -4,27 +4,66 @@
   /* text-align: left; */
 }
 
-.footer-flex__placing {
-  text-align: left;
-  display: block;
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  &:nth-child(1) {
-    min-width: 231px;
-    margin-right: 70px;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
-  &:nth-child(2) {
-    min-width: 206px;
-    margin-right: 93px;
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  // flex-wrap: wrap;
+  // align-items: baseline;
+}
+
+.footer-flex__placing {
+  // text-align: left;
+  // display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: unset;
+    align-items: flex-start;
+
+    &:nth-child(1) {
+      min-width: 231px;
+      margin-right: 70px;
+    }
+
+    &:nth-child(2) {
+      min-width: 206px;
+      margin-right: 93px;
+    }
   }
 }
 
-.footer-flex {
+.address {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  // width: 100%;
+
+  @media screen and(min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -106,6 +145,14 @@
 .sign-up {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  @media screen and(min-width: 1200px) {
+    width: unset;
+    align-items: flex-start;
+  }
 }
 
 .sign-up__text {
@@ -121,11 +168,19 @@
 
 .sign-up-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .sign-up-form__input {
-  margin-right: 12px;
-  width: 358px;
+  // margin-right: 12px;
+  width: 100%;
+  // width: 358px;
   height: 50px;
   padding: 15px;
   background-color: #2f303a;
@@ -133,6 +188,17 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   border-radius: 4px;
+  margin-bottom: 20px;
+
+  @media screen and(min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+    margin-bottom: unset;
+    margin-right: 12px;
+  }
 }
 
 .sign-up-form__btn {

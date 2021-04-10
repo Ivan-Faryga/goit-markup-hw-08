@@ -152,10 +152,18 @@
                 <ul class="team__list list">
                     
                     <li class="teammate">
-                        <img src="./images/team/Igor.jpg" alt="Игорь Демьяненко">
-                        <div class="thumb">
-                            
-                        </div>
+                        <picture>
+                            <source srcset="./images/desktop/team/Ihorwp.webp 1x, ./images/desktop/team/Ihor@2xwp.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/team/Ihor.jpg 1x, ./images/desktop/team/Ihor@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/Ihor.jpg 1x, ./images/tablet/team/Ihor@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/Ihor.jpg 1x, ./images/mobile/team/Ihor@2x.jpg 2x" 
+                            media="(min-width: 320px)">
+                            <img src="./images/mobile/team/Ihor.jpg" alt="Игорь Демьяненко">
+                        </picture>
+                        
                         <div class="teammate__info">
                             <h3 class="stuff-initials teammate__header">Игорь Демьяненко</h3>
                             <p lang="en" class="teammate__position">Product designer</p>
@@ -192,9 +200,16 @@
                         </div>
                     </li>
                     <li class="teammate">
-                        <div class="thumb">
-                            <img src="./images/team/Olya.jpg" alt="Ольга Репина">
-                        </div>                      
+                        <picture>
+                            <source srcset="./images/desktop/team/Olyawp.webp 1x, ./images/desktop/team/Olya@2xwp.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/team/Olya.jpg 1x, ./images/desktop/team/Olya@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/Olya.jpg 1x, ./images/tablet/team/Olya@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/Olya.jpg 1x, ./images/mobile/team/Olya@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/mobile/team/Olya.jpg" alt="Ольга Репина">
+                        </picture>
+                                            
                         <div class="teammate__info">
                             <h3 class="stuff-initials teammate__header">Ольга Репина</h3>
                             <p lang="en" class="teammate__position">Frontend developer</p>
@@ -232,9 +247,16 @@
                         
                     </li>
                     <li class="teammate">
-                        <div class="thumb">
-                            <img src="./images/team/Kolya.jpg" alt="Николай Тарасов">
-                        </div>
+                        <picture>
+                            <source srcset="./images/desktop/team/Kolyawp.webp 1x, ./images/desktop/team/Kolya@2xwp.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/team/Kolya.jpg 1x, ./images/desktop/team/Kolya@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/Kolya.jpg 1x, ./images/tablet/team/Kolya@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/Kolya.jpg 1x, ./images/mobile/team/Kolya@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/mobile/team/Kolya.jpg" alt="Николай Тарасов">
+                        </picture>
+                        
                         <div class="teammate__info">
                             <h3 class="stuff-initials teammate__header">Николай Тарасов</h3>
                             <p lang="en" class="teammate__position">Marketing</p>
@@ -273,9 +295,15 @@
                         
                     </li>
                     <li class="teammate">
-                        <div class="thumb">
-                            <img src="./images/team/Mike.jpg" alt="Михаил Ермаков">
-                        </div>                     
+                        <picture>
+                            <source srcset="./images/desktop/team/Mikewp.webp 1x, ./images/desktop/team/Mike@2xwp.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/desktop/team/Mike.jpg 1x, ./images/desktop/team/Mike@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/tablet/team/Mike.jpg 1x, ./images/tablet/team/Mike@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/mobile/team/Mike.jpg 1x, ./images/mobile/team/Mike@2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./images/mobile/team/Mike.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <div class="teammate__info">
                             <h3 class="stuff-initials teammate__header">Михаил Ермаков</h3>
                             <p lang="en" class="teammate__position">UI Designer</p>
@@ -317,7 +345,7 @@
             
         </section>
         <!--постоянные клиенты-->
-        <!-- <section class="padding-section">
+        <section class="padding-section">
 
             <div class="container">
                 <h2 class="section-header">Постоянные клиенты</h2>
@@ -367,19 +395,18 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!--footer-->
-    <!-- <footer class="dark-background-container footer-container">
+    <footer class="dark-background-container footer-container">
 
         <div class="footer-flex container">
             <div class="footer-flex__placing ">
-                <address>
-                    <div class="footer__logo">
-                        <a class="logo link" href="/"><span class="logo-web">Web</span><span class="logo-studio-dark">Studio</span></a>
-                    </div>
-                
+                <div class="footer__logo">
+                    <a class="logo link" href="/"><span class="logo-web">Web</span><span class="logo-studio-dark">Studio</span></a>
+                </div>
+                <address class="address">
                     <ul class="address list">
                         <li>
                             <a class="adress__location link" href="https://goo.gl/maps/zq5mr7NmoWSacKAB8">г. Киев, пр-т Леси
@@ -443,12 +470,10 @@
                             
                     </form>
             </div>
-                
-            
 
         </div>
 
-    </footer> -->
+    </footer>
 
     <div class="backdrop is is-hidden" data-modal>
         <div class="modal">

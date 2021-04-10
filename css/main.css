@@ -58,8 +58,8 @@ ol {
 
 img {
   display: block;
-  min-width: 100%;
   width: 100%;
+  height: auto;
 }
 
 .list {
@@ -88,12 +88,12 @@ img {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -126,7 +126,7 @@ menu__link:hover {
   align-items: center;
 }
 
-.logo {
+header .logo {
   margin-right: 93px;
 }
 
@@ -469,7 +469,6 @@ menu__link:hover {
 
 .teammate {
   max-width: 450px;
-  max-height: 622px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -496,13 +495,6 @@ menu__link:hover {
   .teammate {
     width: 270px;
   }
-  .teammate:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-.thumb {
-  max-width: 100%;
 }
 
 .teammate__info {
@@ -577,16 +569,44 @@ menu__link:hover {
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.clients-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 210px;
+  height: 92px;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+    max-width: 170px;
+  }
 }
 
 .clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
@@ -595,16 +615,6 @@ menu__link:hover {
 
 .clients-list__link:hover, .clients-list__link:focus {
   border-color: var(--accent-color-primary);
-}
-
-.clients-list__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-list__icon {
@@ -630,27 +640,66 @@ menu__link:hover {
   /* text-align: left; */
 }
 
-.footer-flex__placing {
-  text-align: left;
-  display: block;
-}
-
-.footer-flex__placing:nth-child(1) {
-  min-width: 231px;
-  margin-right: 70px;
-}
-
-.footer-flex__placing:nth-child(2) {
-  min-width: 206px;
-  margin-right: 93px;
-}
-
 .footer-flex {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-flex__placing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex__placing {
+    margin-bottom: unset;
+    align-items: flex-start;
+  }
+  .footer-flex__placing:nth-child(1) {
+    min-width: 231px;
+    margin-right: 70px;
+  }
+  .footer-flex__placing:nth-child(2) {
+    min-width: 206px;
+    margin-right: 93px;
+  }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .address {
+    align-items: flex-start;
+  }
 }
 
 .footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -730,6 +779,16 @@ menu__link:hover {
 .sign-up {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up {
+    width: unset;
+    align-items: flex-start;
+  }
 }
 
 .sign-up__text {
@@ -745,11 +804,19 @@ menu__link:hover {
 
 .sign-up-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up-form {
+    flex-direction: row;
+  }
 }
 
 .sign-up-form__input {
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px;
   background-color: #2f303a;
@@ -757,6 +824,21 @@ menu__link:hover {
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #ffffff;
   border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .sign-up-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign-up-form__input {
+    width: 358px;
+    margin-bottom: unset;
+    margin-right: 12px;
+  }
 }
 
 .sign-up-form__btn {
@@ -801,19 +883,23 @@ menu__link:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -844,10 +930,16 @@ menu__link:hover {
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-text {
+    line-height: 1.15;
+  }
 }
 
 .modal-form {
@@ -857,6 +949,7 @@ menu__link:hover {
 }
 
 .modal-form-input {
+  display: block;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -932,12 +1025,19 @@ menu__link:hover {
   justify-content: center;
   align-items: center;
   font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-check-about {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-check-about::before {
