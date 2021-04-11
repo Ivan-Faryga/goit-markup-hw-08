@@ -120,10 +120,6 @@ header .container {
   color: var(--accent-color-primary);
 }
 
-.active {
-  color: #2196f3;
-}
-
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -365,6 +361,13 @@ header .container {
     bottom: 0;
     border-radius: 2px;
   }
+  .menu__link .active {
+    color: #2196f3;
+  }
+  .menu__link .active,
+  .menu__link .menu__link:hover {
+    color: var(--accent-color-primary);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -521,6 +524,10 @@ header .container {
 .hero__btn:active {
   background-color: #188ce8;
   border: none;
+}
+
+.active {
+  color: #2196f3;
 }
 
 .hero__text {
