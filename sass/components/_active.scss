@@ -1,4 +1,8 @@
 .active,
-menu__link:hover {
+.menu__link:hover {
   color: var(--accent-color-primary);
+}
+
+.active {
+  color: #2196f3;
 }

@@ -103,8 +103,12 @@ header .container {
 }
 
 .active,
-menu__link:hover {
+.menu__link:hover {
   color: var(--accent-color-primary);
+}
+
+.active {
+  color: #2196f3;
 }
 
 .header {
@@ -130,6 +134,7 @@ menu__link:hover {
   width: 100vw;
   max-width: 480px;
   height: 100vh;
+  z-index: 1;
   background-color: #ffffff;
   padding: 48px 40px;
   transform-origin: top right;
