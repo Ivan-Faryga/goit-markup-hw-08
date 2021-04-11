@@ -74,6 +74,10 @@ img {
   font-style: normal;
 }
 
+.active {
+  color: #2196f3;
+}
+
 .padding-section {
   padding: var(--section-padding-mob-tab);
 }
@@ -257,6 +261,10 @@ header .container {
   }
 }
 
+.header .active {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 768px) {
   header .logo {
     margin-right: 88px;
@@ -360,13 +368,6 @@ header .container {
     left: 0;
     bottom: 0;
     border-radius: 2px;
-  }
-  .menu__link .active {
-    color: #2196f3;
-  }
-  .menu__link .active,
-  .menu__link .menu__link:hover {
-    color: var(--accent-color-primary);
   }
 }
 
@@ -524,10 +525,6 @@ header .container {
 .hero__btn:active {
   background-color: #188ce8;
   border: none;
-}
-
-.active {
-  color: #2196f3;
 }
 
 .hero__text {
