@@ -114,6 +114,7 @@ header .container {
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
+  border-bottom: 1px solid #ececec;
 }
 
 .burger-btn {
@@ -657,7 +658,7 @@ header .container {
 .footer__logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
@@ -695,6 +696,8 @@ header .container {
 
 .footer-social-title {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -751,7 +754,7 @@ header .container {
 
 .sign-up__text {
   font-weight: 700;
-  /* font-size: 14px; */
+  font-size: 14px;
   line-height: 1.14;
   color: var(--btn-color-white);
   letter-spacing: 0.03em;
