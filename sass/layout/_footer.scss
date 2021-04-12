@@ -63,8 +63,15 @@
 .footer__logo {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 20px;
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
 }
 
 .address > li:not(:last-child) {
